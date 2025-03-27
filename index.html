@@ -4,7 +4,283 @@
 <head>
     
     <title>Webpage Design</title>
-    <link rel="stylesheet" href="project.css">
+     <style>
+        
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.main {
+    width: 100%;
+    background: linear-gradient(to top, rgba(0,0,0,0.5)50%, rgba(0,0,0,0.5));
+    background-image:url(background1.jpeg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+
+.navbar {
+    height: 65px;
+    width: auto;
+    margin: auto;
+    background: black;
+}
+
+.icon {
+    width: 200px;
+    height: 70px;
+    float: left;
+}
+
+.logo {
+    color: #df8ec4;
+    font-size: 35px;
+    font-family: Arial;
+    padding-left: 20px;
+    padding-top: 10px;
+    float: left;
+}
+
+.menu {
+    width: 400px;
+    height: 70px;
+    float: left;
+}
+
+ul {
+    float: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+ul li {
+    list-style: none;
+    margin-left: 62px;
+    color: aquamarine;
+    margin-top: 27px;
+    font-size: 14px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: rgb(230, 238, 243);
+    font-family: Arial;
+    font-weight: bold;
+    transition: 0.4s ease-in-out;
+}
+
+ul li a:hover {
+    color : rgb(219, 16, 185);
+}
+
+.search {
+    width: 330px;
+    float: left;
+    margin-left: 270px;
+}
+
+.srch {
+    font-family: 'Times New Roman';
+    float: left;
+    width: 200px;
+    height: 30px;
+    color: rgb(235, 226, 226);
+    background: transparent;
+    margin-top: 17px;
+    border: 2px solid blue;
+    border-right: none;
+    font-size: 16px;
+    padding: 3.5px;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+    
+}
+
+.btn {
+    width: 70px;
+    height: 40px;
+    color: black;
+    font-size: 15px;
+    background-color: azure;
+    border: 2px solid blue;
+    margin-top: 17px;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+
+}
+
+.btn:focus {
+    outline: none;
+}
+
+.srch:focus {
+    outline: none;
+}
+
+.content {
+    width: 1200px;
+    height: auto;
+    margin: auto;
+    color: #fff;
+    position: relative;
+}
+ 
+.content .par {
+    padding-left: 20px;
+    padding-bottom: 25px;
+    font-family: Arial;
+    letter-spacing: 1.2px;
+    line-height: 25px;
+}
+
+.content .h1 {
+    font-family: 'Times New Roman';
+    font-size: 50px;
+    padding-left: 20px;
+    margin-top: 7%;
+    letter-spacing: 2px;
+}
+
+.content .cn {
+    width: 160px;
+    height: 30px;
+    font-size: 18px;
+    border: none;
+    margin-left: 20px;
+    background-color: #d81c99;
+    border-radius: 10px;
+    cursor: pointer;
+    border: 2px solid burlywood ;
+    transition: .4s ease;
+}  
+
+.content .cn a {
+    text-decoration: none;
+    transition: .3s ease;
+}
+
+.cn:hover {
+    border: blue;
+    background-color: white;
+}
+
+.content span {
+    color: rgb(214, 16, 171);
+    font-size: 60px;
+}
+
+.form {
+    width: 250px;
+    height: 420px;
+    background: linear-gradient(to top, rgba(0,0,0,0.8)50%, rgba(0,0,0,0.8)50%);
+    position: absolute;
+    top: -20px;
+    left: 870px;
+    border-radius: 10px;
+    padding: 25px;
+}
+
+.form h2 {
+    width: 220px;
+    font-family: sans-serif;
+    text-align: center;
+    color: blue;
+    font-size: 20px;
+    background-color: white;
+    border-radius: 10px;
+    margin: 2px;
+    padding: 8px;
+}
+
+.form input{
+    width: 240px;
+    height: 35px;
+    background: transparent;
+    border-bottom: 1px solid blue;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    color: white;
+    font-size: 15px;
+    letter-spacing: 1px;
+    margin-top: 30px;
+    font-family: sans-serif;
+}
+
+.form input:focus {
+    outline: none;
+}
+
+::placeholder {
+    color: white;
+    font-family: Arial;
+}
+
+.btnn {
+    width: 240px;
+    height: 40px;
+    background: blue;
+    border: none;
+    margin-top: 30px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: white;
+    transition: .4s ease;
+}
+
+.btnn:hover {
+    background: white;
+    color: blue;
+}
+
+.btnn a {
+    text-decoration: none;
+    color:black;
+    font-weight: bold;
+
+}
+
+.form .link {
+    font-family: Arial;
+    font-size: 18px;
+    padding-top: 20px;
+    text-align: center;
+}
+
+.form .link a {
+    text-decoration: none;
+    color: blue;
+}
+
+.liw {
+    padding-top: 15px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.icons a {
+    text-decoration: none;
+    color: white;
+}
+
+.icons ion-icon {
+    color: white;
+    font-size: 30px;
+    padding-left: 14px;
+    padding-top: 5px;
+    transition: .3s ease;
+}
+
+.icons ion-icon:hover {
+    color: blue;
+}
+
+
+    </style>
+
 </head>
 <body>
     <div class="main">
